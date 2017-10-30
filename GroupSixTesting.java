@@ -14,6 +14,24 @@
 		}
         return hashCode;
     }
+/*public int hashCode() {
+
+       int hashCode = 1;
+       Node<E> pointer = heads.get(0);
+
+       //while pointer does not return null value --> proceed through List
+       while (pointer != null)
+       {
+         //when head is null, multiply by zero. Otherwise, multiply by head's value
+         hashCode = 31*hashCode + (pointer == null ? 0 : pointer.hashCode());
+
+         //moves to next head
+         pointer = pointer.next(0);
+       }
+       return hashCode;
+   }
+   */
+
 	
 	public boolean testHashCode()
 	{
